@@ -141,7 +141,6 @@
   }
   
   .wrapperContainer {
-    display: flex;
     flex-direction: row;
   }
 
