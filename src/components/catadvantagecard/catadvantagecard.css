@@ -1,0 +1,253 @@
+.catAdvantageCardContainer {
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.catAdvantageCardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.line1 {
+  margin-top: 10px;
+  width: 50.84px;
+  height: 3.13px;
+  border-radius: 77px;
+  background-color: #4d270c;
+}
+
+.catAdvantageCardContent h2 {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: start;
+  color: #291507;
+  margin-top: 20px;
+}
+
+.catAdvantageCardContent p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: start;
+  color: #291507;
+  /* padding: 20px; */
+  max-width: 450px;
+  padding-right: 15px;
+  margin-top: 25px;
+}
+
+.catAdvantageCardContent h4 {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #29150799;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.right_arrow {
+  margin-left: 10px;
+  width: 16.44px;
+  height: 6.31px;
+  color: #7f736a;
+}
+
+.imagesContainer {
+  display: flex;
+  gap: 9px;
+  margin-top: 15px;
+}
+
+.firstImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  flex: 0.5;
+}
+
+.secondImgContainer {
+  flex: 0.5;
+}
+
+.firstImg {
+  width: 100%;
+  height: 50%;
+}
+
+.firstImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.secondImg {
+  width: 100%;
+  height: 50%;
+}
+
+.secondImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.secondImgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+
+
+  .catAdvantageCardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 30px;
+  }
+
+  .catAdvantageCardContent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .catAdvantageCardContent h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.2px;
+  }
+
+  .imagesContainer {
+    width: 50%;
+    display: flex;
+  }
+
+  .firstImgContainer {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    flex: 0.5;
+  }
+
+  .secondImgContainer img {
+    height: 300px;
+    width: 250px;
+    flex: 1;
+  }
+
+  .firstImg {
+    width: 100%;
+    height: 70px;
+  }
+
+  .secondImg {
+    width: 100%;
+    height: calc(100% - 70px);
+  }
+
+  .secondImgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+
+  .catAdvantageCardContainer { 
+    margin-bottom: 50px;
+  }
+  
+  .firstImg {
+    height: 85px;
+  }
+
+  .secondImg {
+    height: calc(100% - 85px);
+  }
+
+  .catAdvantageCardContent {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .catAdvantageCardContainer {
+    width: 90%;
+    display: flex;
+    gap: 5px;
+  }
+
+  .catAdvantageCardContent {
+    display: flex;
+    margin-left: 45px;
+    align-items: start;
+  }
+
+  .catAdvantageCardContent h2 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  .catAdvantageCardContent p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .catAdvantageCardContent h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .line1 {
+    margin-left: 10px;
+  }
+  .firstImg {
+    height: 110px;
+  }
+
+  .secondImg {
+    height: calc(100% - 110px);
+  }
+  .secondImgContainer {
+    max-width: 500px;
+  }
+
+  .secondImgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .firstImg {
+    height: 130px;
+  }
+
+  .secondImg {
+    height: calc(100% - 130px);
+  }
+}

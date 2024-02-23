@@ -1,0 +1,370 @@
+.herobannerContainer {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.herobannerImage {
+  height: 25%;
+  position: relative;
+}
+
+.catImage {
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.herobannerDetails {
+  position: absolute;
+  top: 30px;
+  left: 36px;
+}
+
+.herobannerDetails .title {
+  font-family: "Mystery Quest";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.herobannerDetails .text {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.herobannerDetails .inputContainer {
+  margin-top: 10px;
+  width: 110px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1px 4px;
+
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+
+input::placeholder {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #291507;
+}
+
+.catBread {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.searchOptions {
+  width: 280px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: -30px;
+  margin-top: 10px;
+  padding: 4px;
+
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* Customize scrollbar */
+.searchOptions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.searchOptions::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 10px; /
+}
+
+.searchOptions::-webkit-scrollbar-track {
+  background-color: #f0f0f0; 
+  border-radius: 10px;
+}
+
+.crossIcons {
+  margin-left: 245px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.searchOptions p {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.searchOptions p:hover {
+  background-color: #9797971a;
+  border-radius: 10px;
+  padding: 2px 4px;
+}
+
+.herobannerContent {
+  height: 75%;
+  background-color: #e3e1dc;
+  /* background-color: red; */
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  padding-bottom: 30px;
+}
+
+.herobannerContent_subtext {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #291507;
+  padding-top: 25px;
+  margin-left: 35px;
+}
+.line {
+  background-color: #4d270c;
+  width: 40.89px;
+  height: 3px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.herobannerContent_title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  color: #291507;
+
+  margin: 30px 25px;
+}
+
+.imagesContainers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.animal-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+  /* sm */
+
+  .herobannerImage {
+    height: 50%;
+  }
+
+  .herobannerDetails {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+  }
+
+  .herobannerDetails .title {
+    font-size: 28px;
+    line-height: 55px;
+    text-align: left;
+  }
+
+  .herobannerDetails .text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #fff;
+  }
+
+  .herobannerDetails .inputContainer {
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .herobannerContent {
+    height: 50%;
+  }
+
+  .herobannerContent_subtext {
+    font-size: 16px;
+  }
+
+  .line {
+    height: 4px;
+  }
+
+  .herobannerContent_title {
+    margin: 30px 35px;
+  }
+
+  .animal-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .imagesContainers {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* md */
+  .herobannerImage {
+    height: 55%;
+  }
+
+  .herobannerDetails {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+  }
+
+  .herobannerDetails .title {
+    font-size: 64px;
+    line-height: 87px;
+    text-align: left;
+  }
+
+  .herobannerDetails .text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 832px) { 
+ 
+}
+
+@media only screen and (min-width: 1024px) {
+  /*lg */
+
+  .herobannerContainer {
+    width: 90%;
+  }
+  .herobannerDetails .inputContainer {
+    width: 250px;
+  }
+
+  .searchOptions {
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: -40px;
+  }
+
+  .crossIcons {
+    margin-left: 301px;
+    margin-top: 10px;
+  }
+
+  .herobannerContent_subtext {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .line {
+    width: 59.18px;
+    height: 3.21px;
+
+    border-radius: 77px;
+  }
+
+  .herobannerContent_title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+  }
+
+  .animal-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .imagesContainers {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .herobannerDetails {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+
+  .searchOptions {
+    width: 350px;
+    height: 300px;
+  }
+
+  .crossIcons {
+    margin-left: 300px;
+    margin-top: 10px;
+  }
+  .imagesContainers {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 1.5rem;
+  }
+}
